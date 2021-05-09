@@ -1,0 +1,19 @@
+I'm going to build a game called :   Head and Tails
+
+
+in order to create this game,first of all I need a playground.My play ground Containes a background ,
+a coin, a button and a counter to show how many times you won
+
+first of all player have to choose head or tails.after choosing a one of this ,by clicking on the start button
+the game will start
+
+
+How it works????
+when the player chooses a side , based on the choice that he made a value will be saved in a variable.
+after clicking on start button a roandom number between 0 - 1.99 will be produced and then then we will round it.
+if the number was equal to the value that player choose ,he will be the winner and opposite;
+
+
+What kind of view the game will have??
+we are going to make a dynomic page using js and css.for this game there will be a transform-3d option as
+an important vision

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/oswald-stencil/Oswald-Medium.ttf);
+}
+@font-face {
+    font-family: "Prestige Elite Std";
+    src: url(../fonts/prestige-elite-std/PrestigeEliteStd-Bd.otf);
+}
+@font-face {
+    font-family: "Charlemagne Std";
+    src: url(../fonts/charlemagne-std/CharlemagneStd-Bold.otf);
+}
+@font-face {
+    font-family: "Heavy Copper";
+    src: url(../fonts/heavy-copper-font/HeavyCopper-BWXBx.otf);
+}
+@font-face {
+    font-family: Funtasia;
+    src: url(../fonts/funtasia-font/Funtasia-axYAa.ttf);
+}
+@font-face {
+    font-family: "NightmarePills";
+    src: url(../fonts/NightmarePills-BV2w.ttf);
+}
+@font-face {
+    font-family: "Death Star";
+    src: url(../fonts/death-star-font/DeathStar-VmWB.ttf);
+}
+@media screen and (max-width:600px)
+{
+    .Container{
+        grid-template-rows: repeat(3 , 1fr);
+        grid-template-areas: "a a a a" "b b b b" "b b b b";
+    }
+    .Container .Main-Content{
+        border-left: none;
+        border-top: 1px solid whitesmoke;
+    }
+    .Container .Main-Content .Choose{
+        font-size: 15px;
+    }
+    .Main-Content .CoinSides{
+        height:100px;
+        width: 80%;
+        
+    }
+    .CoinSides .coin{
+        height: 100%;
+        width :100px;
+        border-radius: 50%;
+        position: absolute;
+    }
+    .Main-Content .Result-PopUp-W{
+        
+        font-size: 6em;
+        
+        
+    }
+}

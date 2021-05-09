@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    color: #ddd;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.Container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-areas: 
+    "a b b b"
+    ;
+
+}
+
+.Main-Content{
+    grid-area: b;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #13002B;
+    border-left: 3px solid whitesmoke;
+}
+.Main-Content .Choose{
+    color: rgb(233, 245, 241);
+    font-size: 2em;
+    letter-spacing: 2px;
+    font-family: "Charlemagne Std";
+}
+.Main-Content .CoinSides{
+    height:150px;
+    width: 60%;
+    position: relative;
+    
+    display: flex;
+    justify-content: space-around;
+}
+.CoinSides .coin{
+    height: 100%;
+    width :150px;
+    border-radius: 50%;
+    position: absolute;
+}
+.CoinSides .coin:hover{
+    cursor: pointer;
+    
+}
+.CoinSides .head{
+    background:url(../Image/head-dime.jpg);
+    background-size: cover;
+    left: 0;
+    transition: all 0.3s linear;
+}
+.CoinSides .tail{
+    background:url(../Image/tail-dime.jpg);
+    background-size: cover;
+    right: 0;
+    transition: all 0.3s linear;
+}
+.choosen{
+    background-size: cover;
+}
+.Main-Content #err{
+    color: red;
+    font-size: large;
+}
+.Main-Content .Result-PopUp-W{
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    color:rgb(17, 170, 3);
+    text-transform: uppercase;
+    font-family:Funtasia;
+
+    
+}
+.Main-Content .Result-PopUp-L{
+    position: absolute;
+    height: 150%;
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10em;
+    color:rgb(241, 7, 7);
+    text-transform: uppercase;
+    font-family:Funtasia;
+
+    
+}
+
+.Main-Content hr{
+    width: 70%;
+    background-color: #1f1f1f;
+}
+.Main-Content .btn{
+    width: 70%;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    background:#14C472 ;
+    color: #efefef;
+    font-size: 40px;
+    font-family: "Prestige Elite Std";
+    
+}
+.Main-Content .btn:hover{
+    cursor: pointer;
+    background:#05d373d5  ;
+    
+}
+.Score-Container{
+    grid-area: a;
+    background-color:#10003B ;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.Score-Container h2 {
+    font-family: Oswald;
+    text-transform: uppercase;
+    color: #AC0D4E;
+    font-size: 40px;
+}
+.Score-Container .Player{
+    width: 100%;
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Score-Container .Computer{
+    width: 100%;
+    position: relative;
+    top: 35%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.Score-Container .Player #playerResult ,
+.Score-Container .Computer #computerResult{
+    color :yellowgreen
+}
+
+
+
